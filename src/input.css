@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-dm: "DM Sans", sans-serif;
+  --font-car: "Cormorant Garamond", serif;
+  --font-fraunces: "Fraunces", serif;
+  --font-outfit: "Outfit", sans-serif;
+  --color-golden:#C5A45D;
+  --color-ivory:#F7F3EA;
+}

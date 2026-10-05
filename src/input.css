@@ -5,6 +5,7 @@
   --font-car: "Cormorant Garamond", serif;
   --font-fraunces: "Fraunces", serif;
   --font-outfit: "Outfit", sans-serif;
+  --font-eb:"Eb Garamond", serif;
   --color-golden:#C5A45D;
   --color-ivory:#F7F3EA;
   --color-pinkish-white:#F3EFE7;
@@ -13,4 +14,6 @@
   --color-cream:#F7F1E8;
   --color-dark:#252A27;
   --color-shade:#2C2B27;
+  --color-dark-bgreen:#00241D;
+  --color-dark-golden:#755A1B;
 }

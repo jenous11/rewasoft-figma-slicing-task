@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tranquility Paradise Resort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+  rel="stylesheet">
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+   <section class="relative min-h-[1330px] overflow-hidden bg-[#F7F4EF]">
+
+    <!-- mountain picture at 50% -->
+    <img src="/images/inquiry/section1-bg.jpg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-50">
+    <!-- black 15% layer -->
+    <div class="absolute inset-0 bg-black/15"></div>
+    <!-- header called by js -->
+    <div id="header" class="absolute top-0 left-0 z-50 w-full"></div>
+
+    <!-- page content, above layers -->
+    <div class="relative z-10 pt-[101px]">
+
+      <div class="mx-auto flex w-full max-w-[1280px] flex-col items-center px-6 py-[144px] text-center">
+
+        <!-- heading -->
+        <p class="font-dm text-[16px] font-semibold uppercase leading-[16px] tracking-[1.1px] text-golden">
+          Direct resort inquiry
+        </p>
+        <h2 class="font-car text-[72px] font-bold leading-[76px] -tracking-[1.36px] text-dark-bgreen">
+          Make an Inquiry
+        </h2>
+        <p class="mt-4 font-dm text-[18px] font-normal leading-[29px] tracking-[0.18px]">
+          Tell us what you’re looking for, and our resort team will get back to you with the<br class="hidden md:block">
+          information you need.
+        </p>
+
+        <!-- form card -->
+        <form action="#" method="post"
+          class="mt-16 flex min-h-[683px] w-full max-w-[736px] flex-col gap-8 rounded-xl bg-ivory p-16 text-left">
+
+          <!-- full name -->
+          <div class="flex flex-col gap-2">
+            <label for="name" class="font-dm text-[10px] font-semibold uppercase tracking-wider text-dark">
+              Full name *
+            </label>
+            <input id="name" name="name" type="text" required placeholder="e.g. Eleanor Vance"
+              class="border-b border-dark/20 bg-transparent pb-2 font-dm text-[13px] outline-none placeholder:text-dark/30 focus:border-golden">
+          </div>
+
+          <!-- email + phone -->
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="flex flex-col gap-2">
+              <label for="email" class="font-dm text-[10px] font-semibold uppercase tracking-wider text-dark">
+                Email address *
+              </label>
+              <input id="email" name="email" type="email" required placeholder="eleanor@sanctuary.com"
+                class="border-b border-dark/20 bg-transparent pb-2 font-dm text-[13px] outline-none placeholder:text-dark/30 focus:border-golden">
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="phone" class="font-dm text-[10px] font-semibold uppercase tracking-wider text-dark">
+                Phone number <span class="font-normal text-dark/40">(optional)</span>
+              </label>
+              <input id="phone" name="phone" type="tel" placeholder="+977 980 000 0000"
+                class="border-b border-dark/20 bg-transparent pb-2 font-dm text-[13px] outline-none placeholder:text-dark/30 focus:border-golden">
+            </div>
+          </div>
+
+          <!-- category -->
+          <div class="flex flex-col gap-2">
+            <label for="category" class="font-dm text-[10px] font-semibold uppercase tracking-wider text-dark">
+              Inquiry category *
+            </label>
+            <select id="category" name="category" required
+              class="border-b border-dark/20 bg-transparent pb-2 font-dm text-[13px] outline-none focus:border-golden">
+              <option value="">Select nature of your liaison...</option>
+              <option value="booking">Room booking</option>
+              <option value="event">Events &amp; weddings</option>
+              <option value="dining">Dining</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- message -->
+          <div class="flex flex-1 flex-col gap-2">
+            <label for="message" class="font-dm text-[10px] font-semibold uppercase tracking-wider text-dark">
+              Message details *
+            </label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Please provide details regarding dates, party size, preferred arrangements, or specific inquiries..."
+              class="flex-1 resize-none border-b border-dark/20 bg-transparent pb-2 font-dm text-[13px] outline-none placeholder:text-dark/30 focus:border-golden"></textarea>
+          </div>
+
+          <!-- submit -->
+          <button type="submit"
+            class="mt-auto cursor-pointer self-center rounded-full bg-golden px-8 py-3 font-dm text-[12px] font-semibold uppercase tracking-widest text-white shadow-md transition hover:brightness-95">
+            Submit inquiry
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <div id="footer"></div>
+  <script src="/src/components.js"></script>
+</body>
+
+</html>

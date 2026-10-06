@@ -1,20 +1,56 @@
-<header
-  class="flex justify-between items-center font-dm w-full h-[94px] px-[48px]  bg-[#2C2B27]/10 border-[#F7F4EF]/30 backdrop-blur-[4px]">
-  <img src="/images/homepage/logo.svg" alt="" class="w-[168px] h-[101px]">
-  <nav class=" w-[833px] ">
+<header class="relative flex justify-between items-center w-full h-[94px] px-[20px] md:px-[48px] border-b-[0.5px] border-[#F7F4EF]/30 bg-[#2C2B27]/10 backdrop-blur-[4px] font-dm">
+
+  <a href="/homepage.html">
+    <img src="/images/homepage/logo.svg" alt="Tranquility Paradise Resort"
+      class="h-[64px] w-auto xl:h-[101px] xl:w-[168px]">
+  </a>
+
+  <!-- desktop nav: only from xl up -->
+  <nav class="hidden xl:block w-[833px]">
     <ul class="flex gap-[15px] w-full items-center justify-between text-white">
-      <li>About</li>
-      <li>Rooms</li>
-      <li>Amenities</li>
-      <li>Events</li>
-      <li>Experience</li>
-      <li>Gallery</li>
-      <li>Blogs</li>
-      <li>Contact</li>
+      <li><a href="/aboutpage.html">About</a></li>
+      <li><a href="/rooms.html">Rooms</a></li>
+      <li><a href="/amenities.html">Amenities</a></li>
+      <li><a href="/events.html">Events</a></li>
+      <li><a href="/experiences.html">Experiences</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/blogs.html">Blogs</a></li>
+      <li><a href="/contactus.html">Contact</a></li>
     </ul>
   </nav>
-  <button
-    class="bg-[#FFE89D]/80 px-[32px] py-[14px] rounded-[12px]  h-[49px] whitespace-nowrapse text-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-    Inquire Now
-  </button>
+
+  <div class="flex items-center gap-[16px]">
+    <!-- hidden on phones, shown from sm up -->
+    <a href="/inquiry.html"
+      class="hidden  sm:inline-flex items-center justify-center h-[49px] px-[32px] py-[14px] rounded-[12px] bg-[#FFE89D]/80 text-white font-bold text-[14px] whitespace-nowrap shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+      Inquire Now
+    </a>
+
+    <!-- hamburger: hidden from xl up -->
+    <button id="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false"
+      class="xl:hidden flex flex-col gap-[5px] p-[8px]">
+      <span class="block w-[24px] h-[2px] bg-white"></span>
+      <span class="block w-[24px] h-[2px] bg-white"></span>
+      <span class="block w-[24px] h-[2px] bg-white"></span>
+    </button>
+  </div>
+
+  <!-- mobile menu: hidden until the button is clicked -->
+  <div id="mobile-menu"
+    class=" xl:hidden absolute top-full left-0 w-full px-[20px] py-[20px] bg-[#2C2B27]/95 backdrop-blur-[4px]">
+    <ul class="flex flex-col gap-[16px] text-white ">
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/rooms.html">Rooms</a></li>
+      <li><a href="/amenities.html">Amenities</a></li>
+      <li><a href="/events.html">Events</a></li>
+      <li><a href="/experiences.html">Experiences</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/blogs.html">Blogs</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+    <a href="/inquiry.html"
+      class=" mt-[20px] inline-flex items-center justify-center h-[49px] px-[32px] rounded-[12px] bg-[#FFE89D]/80 text-white font-bold text-[14px]">
+      Inquire Now
+    </a>
+  </div>
 </header>

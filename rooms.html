@@ -13,20 +13,22 @@
 
 <body>
 
-<!-- section 1 -->
+  <!-- section 1 -->
   <section
     class="relative flex flex-col justify-center  min-h-[856px] pt-[101px] px-[20px]  bg-[url('/images/rooms/rooms-bg.jpg')] bg-cover bg-center bg-no-repeat">
     <!-- header called by js -->
     <div id="header" class="absolute top-0 left-0 w-full z-50"></div>
 
+  <!-- shade -->
+  <div class="absolute inset-0 bg-[#2C2B27]/50"></div>
     <div class="flex flex-col gap-[19px]">
       <h1 class="font-car text-ivory text-[40px] leading-[48px] md:text-[72px] md:leading-[86.92px]">
         <span class="block font-bold">Rooms and Accomodation</span>
-        <span class="block font-semibold italic">close to Kathmandu.</span>
+        <!-- <span class="block font-semibold italic">close to Kathmandu.</span> -->
       </h1>
       <p
-        class="max-w-[448px] font-dm font-light text-[16px] leading-[26px] md:text-[18px] md:leading-[29.25px] text-[#F7F3EA]">
-       Discover comfortable accommodation designed for peaceful stays at Tranquility Paradise Resort.
+        class="max-w-[760px] font-dm font-light text-[16px] leading-[26px] md:text-[18px] md:leading-[29.25px] text-[#F7F3EA]">
+    Discover comfortable accommodation designed for peaceful stays at Tranquility Paradise Resort.
       </p>
       <!-- <div class="-ml-2.5 mt-[5px] flex flex-wrap items-center">
         <div class="p-2.5 drop-shadow-[0_4px_2px_rgba(0,0,0,0.25)]">
@@ -45,18 +47,300 @@
     </div>
   </section>
 
-  <!-- section 2 -->
-<section>
-     <div class="flex flex-col justify-center items-center text-center">
+  <!-- section 2: rooms -->
+
+
+  <section class="w-full px-[20px] md:px-[64px] pt-[78px] pb-[80px] bg-linear-to-b from-[#F7DBD4] to-[#F7F3EA]">
+
+    <!-- heading -->
+    <div class="flex flex-col justify-center items-center text-center">
       <img src="/images/homepage/crownlogo.png" alt="" class="w-[191px] h-[55px]">
-      <p class="font-dm font-semibold text-[16px] uppercase tracking-[2.7px] text-golden">stay with us</p>
-      <h2 class="font-car font-bold text-[50px] leading-[63.8px] text-center text-dark-green">Room made for slowing down</h2>
+      <p class="font-dm font-semibold text-[16px] uppercase tracking-[2.7px] text-golden">Stay with us</p>
+      <h2 class="font-car font-bold text-[32px] leading-[40px] md:text-[50px] md:leading-[63.8px] text-dark-green">Room
+        made for slowing down</h2>
     </div>
 
+    <!-- room cards -->
+    <div class="flex flex-col gap-[48px] lg:gap-[84px] w-full max-w-[1213px] mx-auto mt-[45px]">
+
+      <!-- room card 1 (copy this whole div for each room) -->
+      <article
+        class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-y-[28px] lg:gap-x-[44px] items-center lg:min-h-[691px] px-[20px] py-[24px] md:px-[33px] md:py-[43px] rounded-[12px] border-b-[0.8px] border-[#E8E0D2] bg-[#F7F3EA]/80 shadow-[0_4px_4px_0_rgba(0,0,0,0.05)]">
+
+        <!-- left: images -->
+        <div class="flex flex-col gap-[7px] min-w-0">
+          <img src="/images/rooms/section1-img1.jpg" alt="Deluxe Room"
+            class="w-full aspect-[518/387] object-cover rounded-[12px]">
+          <div class="grid grid-cols-4 gap-[7px]">
+            <img src="/images/rooms/section1-img1.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section1-img2.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section1-img3.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section1-img4.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+          </div>
+        </div>
+
+        <!-- right: details -->
+        <div class="flex flex-col min-w-0">
+
+          <div class="flex items-center gap-[12px]">
+            <span class="font-dm font-medium text-[12px] tracking-[1.5px] text-golden">Deluxe Room</span>
+            <span class="block w-[36px] h-px bg-golden"></span>
+          </div>
+
+          <h3
+            class="mt-[18px] font-fraunces font-light text-[32px] leading-[40px] md:text-[40px] md:leading-[48px] text-dark-green">
+            Deluxe Room 01</h3>
+          <p class="mt-[16px] font-car italic text-[18px] leading-[24px] text-[#252A27]/60">A quiet space for
+            comfortable stays.</p>
+
+          <p class="mt-[22px] max-w-[584px] font-dm font-normal text-[14px] leading-[26px] text-[#252A27]/80">
+            The Deluxe Room offers a peaceful retreat with warm interiors, natural light and comfortable furnishings.
+            Designed for couples and solo travellers, the room balances simplicity with considered comfort — a calm base
+            from which to experience the resort and its surroundings.
+          </p>
+
+          <span class="mt-[32px] block w-full max-w-[432px] h-px bg-[#E8E0D2]"></span>
+
+          <!-- occupancy + bed -->
+          <div class="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] gap-y-[20px] max-w-[432px]">
+            <div>
+              <p class="font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Occupancy</p>
+              <p class="mt-[8px] flex items-center gap-[8px] font-dm text-[12px] text-[#252A27]">
+                <img src="/images/rooms/icons/user.svg" alt="" class="w-[14px] h-[14px]">2 Guests
+              </p>
+            </div>
+            <div>
+              <p class="font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Bed Configuration</p>
+              <p class="mt-[8px] flex items-center gap-[8px] font-dm text-[12px] text-[#252A27]">
+                <img src="/images/rooms/icons/bed.svg" alt="" class="w-[14px] h-[14px]">1 King Bed
+              </p>
+            </div>
+          </div>
+
+          <!-- features -->
+          <p class="mt-[30px] font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Room Features</p>
+          <ul
+            class="mt-[14px] grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] gap-y-[14px] max-w-[432px] font-dm text-[12px] text-[#252A27]">
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/wifi.svg" alt=""
+                class="w-[14px] h-[14px]">High-Speed Wi-Fi</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/ac.svg" alt=""
+                class="w-[14px] h-[14px]">Air Conditioning</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/tv.svg" alt=""
+                class="w-[14px] h-[14px]">Television</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/bathroom.svg" alt=""
+                class="w-[14px] h-[14px]">Private Bathroom</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/room-service.svg" alt=""
+                class="w-[14px] h-[14px]">Room Service</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/garden.svg" alt=""
+                class="w-[14px] h-[14px]">Garden View</li>
+          </ul>
+
+          <a href="https://wa.me/9779768405645"
+            class="mt-[40px] inline-flex self-start items-center justify-center gap-[8px] h-[36px] px-[16px] rounded-[6px] bg-golden text-ivory font-dm font-bold text-[12px] whitespace-nowrap transition duration-300 hover:brightness-95">
+            <img src="/images/rooms/icons/whatsapp.svg" alt="" class="w-[14px] h-[14px]">
+            Enquire on WhatsApp
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+
+    <!-- room cards -->
+    <div class="flex flex-col gap-[48px] lg:gap-[84px] w-full max-w-[1213px] mx-auto mt-[45px]">
+
+      <!-- room card 1 (copy this whole div for each room) -->
+      <article
+        class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-y-[28px] lg:gap-x-[44px] items-center lg:min-h-[691px] px-[20px] py-[24px] md:px-[33px] md:py-[43px] rounded-[12px] border-b-[0.8px] border-[#E8E0D2] bg-[#F7F3EA]/80 shadow-[0_4px_4px_0_rgba(0,0,0,0.05)]">
+
+        <!-- left: images -->
+        <div class="flex flex-col gap-[7px] min-w-0">
+          <img src="/images/rooms/rooms-bg2.jpg" alt="Deluxe Room"
+            class="w-full aspect-[518/387] object-cover rounded-[12px]">
+          <div class="grid grid-cols-4 gap-[7px]">
+            <img src="/images/rooms/section2-img1.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section2-img2.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section2-img3.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section2-img4.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+          </div>
+        </div>
+
+        <!-- right: details -->
+        <div class="flex flex-col min-w-0">
+
+          <div class="flex items-center gap-[12px]">
+            <span class="font-dm font-medium text-[12px] tracking-[1.5px] text-golden">Premium Suite</span>
+            <span class="block w-[36px] h-px bg-golden"></span>
+          </div>
+
+          <h3
+            class="mt-[18px] font-fraunces font-light text-[32px] leading-[40px] md:text-[40px] md:leading-[48px] text-dark-green">
+            Premium Suite 01</h3>
+          <p class="mt-[16px] font-car italic text-[18px] leading-[24px] text-[#252A27]/60">A quiet space for
+            comfortable stays.</p>
+
+          <p class="mt-[22px] max-w-[584px] font-dm font-normal text-[14px] leading-[26px] text-[#252A27]/80">
+            The Deluxe Room offers a peaceful retreat with warm interiors, natural light and comfortable furnishings.
+            Designed for couples and solo travellers, the room balances simplicity with considered comfort — a calm base
+            from which to experience the resort and its surroundings.
+          </p>
+
+          <span class="mt-[32px] block w-full max-w-[432px] h-px bg-[#E8E0D2]"></span>
+
+          <!-- occupancy + bed -->
+          <div class="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] gap-y-[20px] max-w-[432px]">
+            <div>
+              <p class="font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Occupancy</p>
+              <p class="mt-[8px] flex items-center gap-[8px] font-dm text-[12px] text-[#252A27]">
+                <img src="/images/rooms/icons/user.svg" alt="" class="w-[14px] h-[14px]">2 Guests
+              </p>
+            </div>
+            <div>
+              <p class="font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Bed Configuration</p>
+              <p class="mt-[8px] flex items-center gap-[8px] font-dm text-[12px] text-[#252A27]">
+                <img src="/images/rooms/icons/bed.svg" alt="" class="w-[14px] h-[14px]">1 King Bed
+              </p>
+            </div>
+          </div>
+
+          <!-- features -->
+          <p class="mt-[30px] font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Room Features</p>
+          <ul
+            class="mt-[14px] grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] gap-y-[14px] max-w-[432px] font-dm text-[12px] text-[#252A27]">
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/wifi.svg" alt=""
+                class="w-[14px] h-[14px]">High-Speed Wi-Fi</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/ac.svg" alt=""
+                class="w-[14px] h-[14px]">Air Conditioning</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/tv.svg" alt=""
+                class="w-[14px] h-[14px]">Television</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/bathroom.svg" alt=""
+                class="w-[14px] h-[14px]">Private Bathroom</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/room-service.svg" alt=""
+                class="w-[14px] h-[14px]">Room Service</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/garden.svg" alt=""
+                class="w-[14px] h-[14px]">Garden View</li>
+          </ul>
+
+          <a href="https://wa.me/9779768405645"
+            class="mt-[40px] inline-flex self-start items-center justify-center gap-[8px] h-[36px] px-[16px] rounded-[6px] bg-golden text-ivory font-dm font-bold text-[12px] whitespace-nowrap transition duration-300 hover:brightness-95">
+            <img src="/images/rooms/icons/whatsapp.svg" alt="" class="w-[14px] h-[14px]">
+            Enquire on WhatsApp
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+    <!-- room cards -->
+    <div class="flex flex-col gap-[48px] lg:gap-[84px] w-full max-w-[1213px] mx-auto mt-[45px]">
+
+      <!-- room card 1 (copy this whole div for each room) -->
+      <article
+        class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] gap-y-[28px] lg:gap-x-[44px] items-center lg:min-h-[691px] px-[20px] py-[24px] md:px-[33px] md:py-[43px] rounded-[12px] border-b-[0.8px] border-[#E8E0D2] bg-[#F7F3EA]/80 shadow-[0_4px_4px_0_rgba(0,0,0,0.05)]">
+
+        <!-- left: images -->
+        <div class="flex flex-col gap-[7px] min-w-0">
+          <img src="/images/rooms/rooms-bg3.jpg" alt="Deluxe Room"
+            class="w-full aspect-[518/387] object-cover rounded-[12px]">
+          <div class="grid grid-cols-4 gap-[7px]">
+            <img src="/images/rooms/section3-img1.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section3-img2.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section3-img3.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+            <img src="/images/rooms/section3-img4.jpg" alt="" class="w-full aspect-[124/91] object-cover rounded-[8px]">
+          </div>
+        </div>
+
+        <!-- right: details -->
+        <div class="flex flex-col min-w-0">
+
+          <div class="flex items-center gap-[12px]">
+            <span class="font-dm font-medium text-[12px] tracking-[1.5px] text-golden">Family Villa</span>
+            <span class="block w-[36px] h-px bg-golden"></span>
+          </div>
+
+          <h3
+            class="mt-[18px] font-fraunces font-light text-[32px] leading-[40px] md:text-[40px] md:leading-[48px] text-dark-green">
+            Family Villa 01</h3>
+          <p class="mt-[16px] font-car italic text-[18px] leading-[24px] text-[#252A27]/60">A quiet space for
+            comfortable stays.</p>
+
+          <p class="mt-[22px] max-w-[584px] font-dm font-normal text-[14px] leading-[26px] text-[#252A27]/80">
+            The Deluxe Room offers a peaceful retreat with warm interiors, natural light and comfortable furnishings.
+            Designed for couples and solo travellers, the room balances simplicity with considered comfort — a calm base
+            from which to experience the resort and its surroundings.
+          </p>
+
+          <span class="mt-[32px] block w-full max-w-[432px] h-px bg-[#E8E0D2]"></span>
+
+          <!-- occupancy + bed -->
+          <div class="mt-[30px] grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] gap-y-[20px] max-w-[432px]">
+            <div>
+              <p class="font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Occupancy</p>
+              <p class="mt-[8px] flex items-center gap-[8px] font-dm text-[12px] text-[#252A27]">
+                <img src="/images/rooms/icons/user.svg" alt="" class="w-[14px] h-[14px]">2 Guests
+              </p>
+            </div>
+            <div>
+              <p class="font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Bed Configuration</p>
+              <p class="mt-[8px] flex items-center gap-[8px] font-dm text-[12px] text-[#252A27]">
+                <img src="/images/rooms/icons/bed.svg" alt="" class="w-[14px] h-[14px]">1 King Bed
+              </p>
+            </div>
+          </div>
+
+          <!-- features -->
+          <p class="mt-[30px] font-dm font-semibold text-[10px] uppercase tracking-[2px] text-golden">Room Features</p>
+          <ul
+            class="mt-[14px] grid grid-cols-1 sm:grid-cols-2 gap-x-[24px] gap-y-[14px] max-w-[432px] font-dm text-[12px] text-[#252A27]">
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/wifi.svg" alt=""
+                class="w-[14px] h-[14px]">High-Speed Wi-Fi</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/ac.svg" alt=""
+                class="w-[14px] h-[14px]">Air Conditioning</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/tv.svg" alt=""
+                class="w-[14px] h-[14px]">Television</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/bathroom.svg" alt=""
+                class="w-[14px] h-[14px]">Private Bathroom</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/room-service.svg" alt=""
+                class="w-[14px] h-[14px]">Room Service</li>
+            <li class="flex items-center gap-[8px]"><img src="/images/rooms/icons/garden.svg" alt=""
+                class="w-[14px] h-[14px]">Garden View</li>
+          </ul>
+
+          <a href="https://wa.me/9779768405645"
+            class="mt-[40px] inline-flex self-start items-center justify-center gap-[8px] h-[36px] px-[16px] rounded-[6px] bg-golden text-ivory font-dm font-bold text-[12px] whitespace-nowrap transition duration-300 hover:brightness-95">
+            <img src="/images/rooms/icons/whatsapp.svg" alt="" class="w-[14px] h-[14px]">
+            Enquire on WhatsApp
+          </a>
+
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+<!-- section 3: find your space -->
+<section
+  class="relative flex items-center justify-center md:justify-end w-full min-h-[360px] md:min-h-[444px] px-[20px] md:px-[80px] py-[56px] bg-[url('/images/rooms/swan-img.jpg')] bg-cover bg-center bg-no-repeat">
+
+  <!-- overlay: flat on phones, gradient from 768px up -->
+  <div class="absolute inset-0 bg-[#2C2B27]/60 md:bg-transparent md:bg-linear-to-l md:from-[#2C2B27]/70 md:via-[#2C2B27]/30 md:to-[#2C2B27]/20"></div>
+
+  <!-- content -->
+  <div class="relative z-10 flex flex-col items-center text-center md:items-end md:text-right w-full max-w-[480px]">
+    <h2 class="font-car font-bold text-[30px] leading-[38px] sm:text-[36px] sm:leading-[44px] md:text-[44px] md:leading-[54px] text-ivory">
+      Find your space<br>to slow down.
+    </h2>
+    <p class="mt-[16px] font-dm font-light text-[14px] leading-[22px] text-ivory/80 md:text-ivory/60">
+      Each room is designed to give you comfort, quiet and a genuine sense of ease.
+    </p>
+    <a href="https://wa.me/9779768405645"
+      class="mt-[24px] inline-flex items-center justify-center gap-[8px] h-[44px] md:h-[36px] px-[20px] md:px-[16px] rounded-[6px] bg-golden text-ivory font-dm font-bold text-[12px] whitespace-nowrap transition duration-300 hover:brightness-95">
+      <img src="/images/rooms/icons/whatsapp.svg" alt="" class="w-[14px] h-[14px]">
+      Enquire on WhatsApp
+    </a>
+  </div>
 </section>
-
-
-
 
   <!-- footer -->
   <div id="footer"></div>

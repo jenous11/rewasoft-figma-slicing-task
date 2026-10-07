@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Tranquility Paradise Resort</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fraunces:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- section 1 -->
+  <section
+    class="relative flex min-h-[420px] flex-col justify-center px-5 pt-[101px] pb-12 sm:min-h-[500px] sm:px-8 lg:min-h-[600px] lg:px-[79px] lg:pb-0 bg-[url('/images/event-images/eventsimage.jpg')] bg-cover bg-center bg-no-repeat">
+
+    <!-- dark overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- header called by js -->
+    <div id="header" class="absolute top-0 left-0 z-50 w-full"></div>
+
+    <div class="relative z-10 flex flex-col gap-[19px]">
+      <h1
+        class="font-car text-[40px] font-semibold leading-[48px] text-ivory md:text-[56px] md:leading-[66px] lg:text-[72px] lg:leading-[86.92px]">
+        Events Hosted
+      </h1>
+      <p
+        class="max-w-[760px] font-dm text-base font-light leading-[26px] text-[#F7F3EA] md:text-[18px] md:leading-[29.25px]">
+        A collection of gatherings, celebrations, meetings, and moments shared at Tranquility Paradise Resort.
+      </p>
+    </div>
+  </section>
+  <!-- section 2: past events -->
+  <!-- section 2: past events -->
+  <section
+    class="relative overflow-x-hidden bg-[url('/images/inquiry/section1-bg.jpg')] bg-cover bg-center bg-no-repeat">
+
+    <!-- warm ivory layer at 40%, as in Figma -->
+    <div class="absolute inset-0 bg-[#F7F3EA]/40"></div>
+
+    <div class="relative z-10 mx-auto w-full max-w-[1440px] px-5 py-10 sm:px-8 lg:px-[64px] lg:py-[64px]">
+
+      <!-- event 01 -->
+      <article
+        class="mx-auto grid max-w-[1146px] grid-cols-1 gap-8 lg:grid-cols-[minmax(0,399px)_minmax(0,1fr)] lg:gap-x-[40px]">
+
+        <!-- big photo: 399 x 660, radius 12 -->
+        <img src="/images/event-images/section1-hero.jpg" alt="Corporate leadership retreat by the lake"
+          class="aspect-[4/3] w-full rounded-[12px] object-cover sm:aspect-[16/10] lg:aspect-auto lg:h-[560px]">
+
+        <!-- text column: padding top 48 -->
+        <div class="min-w-0 lg:pt-[48px]">
+
+          <p class="font-fraunces text-[56px] font-light leading-none text-golden lg:text-[80px]">01</p>
+          <p class="mt-2 font-outfit text-[10px] font-normal uppercase tracking-[2px] text-golden">Corporate Retreat</p>
+
+          <h2
+            class="mt-3 font-fraunces text-3xl font-light leading-tight text-[#252A27] text-balance md:text-4xl lg:text-[42px] lg:leading-[48px]">
+            Corporate Leadership Retreat
+          </h2>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="h-px w-6 bg-golden"></span>
+            <p class="font-outfit text-[10px] font-normal uppercase tracking-[2px] text-golden">April 20, 2026</p>
+          </div>
+
+          <p
+            class="mt-8 max-w-[599px] font-outfit text-sm font-light leading-relaxed text-[#252A27]/80 lg:mt-10 lg:text-[14px] lg:leading-[25px]">
+            A multi-day corporate retreat bringing a leadership team together for strategy sessions, open-air workshops,
+            and collective reflection in the calm surroundings of Tranquility Paradise Resort.
+          </p>
+
+          <p class="mt-5 font-outfit text-[9px] font-normal uppercase tracking-[2px] text-golden">Highlights</p>
+          <ul
+            class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 font-outfit text-[11px] font-semibold text-[#252A27]">
+            <li>Strategy Sessions</li>
+            <li class="text-golden">·</li>
+            <li>Outdoor Workshops</li>
+            <li class="text-golden">·</li>
+            <li>Team Dinners</li>
+            <li class="text-golden">·</li>
+            <li>Guest Experience</li>
+            <li class="text-golden">·</li>
+            <li>Venue Setup</li>
+          </ul>
+
+          <p class="mt-6 font-outfit text-[9px] font-normal uppercase tracking-[2px] text-golden">Photography</p>
+          <div
+            class="mt-4 flex snap-x snap-mandatory gap-[18px] overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <img src="/images/event-images/section1-img1.jpg" alt="Leadership workshop session"
+              class="aspect-[322/180] w-[75%] shrink-0 snap-start rounded-[12px] object-cover sm:w-[322px]">
+            <img src="/images/event-images/section1-img2.jpg" alt="Team meeting around the table"
+              class="aspect-[322/180] w-[75%] shrink-0 snap-start rounded-[12px] object-cover sm:w-[322px]">
+          </div>
+
+        </div>
+      </article>
+
+      <!-- event 02: copy the whole <article> above, change number, text, image names,
+         and add  mt-12 lg:mt-[96px]  to its class -->
+
+    </div>
+  </section>
+  <!-- footer -->
+  <div id="footer"></div>
+  <script src="/src/components.js"></script>
+</body>
+
+</html>
